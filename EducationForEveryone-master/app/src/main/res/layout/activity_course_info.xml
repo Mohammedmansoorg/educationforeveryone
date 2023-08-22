@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+    <!--todo context değiştir-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/p_image"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:src="@mipmap/ic_account"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_courseinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_courseinfo"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="COURSE INFO"
+            app:titleTextColor="@color/black" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appbarlayout_courseinfo"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="Course Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="68dp"
+            android:lines="5"
+            android:maxHeight="300dp"
+            android:minHeight="100dp"
+            android:text="about Course"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_courseName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textBio"
+            app:layout_constraintEnd_toEndOf="@+id/textBio"
+            app:layout_constraintTop_toBottomOf="@+id/textBio"
+            android:text="category"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/visitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="VISIT"
+            android:background="@drawable/shape_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/msgBtn"
+            app:layout_constraintTop_toBottomOf="@+id/text_category"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/msgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MESSAGE"
+            app:layout_constraintStart_toEndOf="@+id/visitBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_category"
+            android:background="@drawable/shape_button"
+            />
+
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/msgImageBtn"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_marginTop="72dp"-->
+        <!--        android:background="@android:color/transparent"-->
+        <!--        android:src="@mipmap/ic_message"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/likeImageBtn"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textBio">-->
+
+        <!--    </ImageView>-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/likeImageBtn"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_marginTop="72dp"-->
+        <!--        android:background="@android:color/transparent"-->
+        <!--        android:src="@mipmap/ic_add_friend"-->
+        <!--        app:layout_constraintEnd_toStartOf="@id/msgImageBtn"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textBio">-->
+
+        <!--    </ImageView>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Home.HomeFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:title="HOME"
+            app:titleTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_chat_item"
+        android:padding="50dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_tyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="tyt: 100 gün"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="italic|bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_ayt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/text_tyt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="ayt: 101 gün"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="50dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

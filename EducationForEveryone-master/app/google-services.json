@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "885508184463",
+    "project_id": "education-for-everyone-ada64",
+    "storage_bucket": "education-for-everyone-ada64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885508184463:android:c5e8a3fc120eb5b405d3fa",
+        "android_client_info": {
+          "package_name": "com.example.educationforeveryone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885508184463-blk7jafupu6mofp1r7ef823m9aues1j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxsNi-KLCjmWSF0wywop2AswNfCJ6HGYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885508184463-blk7jafupu6mofp1r7ef823m9aues1j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

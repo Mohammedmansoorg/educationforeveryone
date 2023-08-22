@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.CreateCourse.CreateCourseActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_course_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_course_crate_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="CREATE COURSE"
+            app:titleTextColor="@color/black" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Course Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbarlayout_course_activity"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_course_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Course Info"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_course_name"
+
+        />
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radio_button_groups_class_no"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/linear_create_course_subjects"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_text_course_bio">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_button_8_class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="8" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_button_9_class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="9" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_button_10_class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="10" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_button_11_class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="11" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_button_12_class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="12" />-->
+<!--    </RadioGroup>-->
+
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radio_button_groups_class"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/radio_button_groups_class_no"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_text_course_bio"-->
+<!--        app:layout_constraintVertical_bias="0.5">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButton6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Matemeatik" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButton5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Fizik" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButton4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Biyoloji" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButton2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Kimya" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButton3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Türkçe" />-->
+<!--    </RadioGroup>-->
+
+
+    <LinearLayout
+        android:id="@+id/linear_create_course_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/linear_create_course_subjects"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_course_bio"
+        android:orientation="vertical"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_create_course_subjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linear_create_course_grade"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_course_bio"
+        app:layout_constraintVertical_bias="0.5"
+        android:orientation="vertical"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Math"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_physics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physics"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_chem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chemistry"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox_biology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biology"
+            />
+        <CheckBox
+            android:id="@+id/checkBox_turkish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turkish"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_create_course_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_create_course_subjects"
+        android:background="@color/cyan_200"
+        android:layout_marginTop="15dp"
+        android:text="Save"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

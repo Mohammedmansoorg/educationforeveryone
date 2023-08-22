@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue_toolbar">#2196F3</color>
+    <color name="blue_backgrnd">#03A9F4</color>
+    <color name="yellow">#FFC107</color>
+    <color name="seashell">#FFF5EE</color>
+    <color name="vanilla">#F3E5AB</color>
+    <color name="skyblue">#87CEEB</color>
+    <color name="powderblue">#B6D0E2</color>
+    <color name="pastelblue">#A7C7E7</color>
+    <color name="lightblue">#ADD8E6</color>
+    <color name="electricblue">#7DF9FF</color>
+    <color name="brightblue">#0096FF</color>
+    <color name="babyblue">#89CFF0</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="red">#F44336</color>
+    <color name="charcoal">#36454F</color>
+    <color name="neongreen">#0FFF50</color>
+
+    <color name="cyan_200">#80DEEA</color>
+    <color name="lightblue_400">#29B6F6</color>
+    <color name="cyan_100">#B2EBF2</color>
+    <color name="lightblue_300">#4FC3F7</color>
+    <color name="limea_400">#C6FF00</color>
+    <color name="bluegray_200">#B0BEC5</color>
+    <color name="bluegray_800">#37474F</color>
+    <color name="bluegray_100">#CFD8DC</color>
+    <color name="bluegray_50">#ECEFF1</color>
+    <color name="gray_400">#9E9E9E</color>
+    <color name="my_Color1">#455A64</color>
+
+    <color name="baby_blue">#D4F1F4</color>
+    <color name="blue_green">#75E6DA</color>
+    <color name="blue_gorotto">#189AB4</color>
+    <color name="navy_blue">#05445E</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_profile_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/white"
+            app:title="PROFILE"
+            app:titleTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_usrprofile"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fatih Terim"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_username"
+            tools:text="Türkiyenin en iyi teknik direktörü"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_bio"
+            tools:text="italyanca, futbol, Galatasaray"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_logout"
+            app:layout_constraintTop_toBottomOf="@+id/text_skills"
+            android:text="@string/button_save"
+            android:backgroundTint="@color/electricblue"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/button_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_skills"
+            android:text="@string/button_logout"
+            android:backgroundTint="#CBFF0000"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
